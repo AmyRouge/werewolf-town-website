@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#26335a"/>
+      <stop offset="0.5" stop-color="#141b33"/>
+      <stop offset="1" stop-color="#0b0e17"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="40%" cy="36%" r="70%">
+      <stop offset="0" stop-color="#fff6d6"/>
+      <stop offset="0.55" stop-color="#ffd27a"/>
+      <stop offset="1" stop-color="#f5a524"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0.5" stop-color="#ffc75f" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#ffc75f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#121729"/>
+      <stop offset="1" stop-color="#07090f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#sky)"/>
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="150" cy="170" r="5"/><circle cx="250" cy="300" r="3.5"/>
+    <circle cx="860" cy="150" r="5"/><circle cx="905" cy="330" r="3.5"/>
+    <circle cx="120" cy="420" r="3"/><circle cx="780" cy="90" r="3"/>
+  </g>
+
+  <circle cx="512" cy="440" r="380" fill="url(#glow)"/>
+  <circle cx="512" cy="440" r="268" fill="url(#moon)"/>
+  <g fill="#e89a2a" opacity="0.28">
+    <circle cx="420" cy="360" r="34"/><circle cx="628" cy="330" r="22"/><circle cx="600" cy="560" r="40"/>
+  </g>
+
+  <!-- village roofline -->
+  <g fill="#0a0d16">
+    <path d="M0 1024 L0 800 L40 800 L40 772 L145 690 L250 772 L250 820 L232 820 L280 776 L330 820 L330 1024 Z"/>
+    <rect x="196" y="700" width="26" height="60"/>
+    <path d="M694 1024 L694 850 L742 800 L790 850 L790 790 L878 700 L966 790 L966 800 L1024 800 L1024 1024 Z"/>
+    <rect x="910" y="712" width="26" height="62"/>
+  </g>
+  <g fill="#ffb938">
+    <rect x="92" y="828" width="34" height="42" rx="4"/>
+    <rect x="166" y="828" width="34" height="42" rx="4"/>
+    <rect x="266" y="860" width="26" height="32" rx="4"/>
+    <rect x="842" y="820" width="34" height="42" rx="4"/>
+    <rect x="910" y="900" width="34" height="42" rx="4"/>
+    <rect x="728" y="880" width="26" height="32" rx="4"/>
+  </g>
+
+  <!-- hill + howling wolf -->
+  <path d="M250 1024 C290 790 410 728 512 728 C614 728 734 790 774 1024 Z" fill="url(#hill)"/>
+  <path fill="#0a0d16" d="M412 744 L420 690 L424 640 L414 618 L426 602 L410 580 L424 562 L408 540 L422 522 L408 500 L402 470 L384 436 L322 350 L358 362 L322 296 L384 302 L416 294 L428 244 L452 290 L470 236 L480 296 C504 322 522 360 528 398 L548 424 L538 432 L560 462 C600 508 640 548 652 612 C660 652 670 690 704 708 C736 722 772 716 806 694 C806 726 776 748 728 750 L600 752 Z"/>
+</svg>
