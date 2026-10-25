@@ -6,7 +6,8 @@ Plain static HTML/CSS/JS. No build step, no dependencies.
 website/
   index.html     landing page (hero, how it plays, features, roles, roadmap)
   support.html   help, reporting, account deletion route
-  privacy.html   privacy policy (draft — review before store submission)
+  privacy.html   privacy policy
+  terms.html     terms of service
   style.css
   site.js        sets the contact email (edit CONTACT_EMAIL here)
   assets/        icon + favicon (copied from assets-source / apps/mobile/assets)
