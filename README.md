@@ -19,7 +19,7 @@ website/
 npx serve website        # or: python -m http.server -d website 8080
 ```
 
-## Deploy to `https://werewolftown.mtxgames.lk/`
+## Deploy to `https://wolftown.mtxgames.lk/`
 
 All links are relative, so the folder can be uploaded to the root of any static host as-is:
 
