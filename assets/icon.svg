@@ -1,55 +1,88 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
   <defs>
-    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
-      <stop offset="0" stop-color="#26335a"/>
-      <stop offset="0.5" stop-color="#141b33"/>
-      <stop offset="1" stop-color="#0b0e17"/>
-    </radialGradient>
-    <radialGradient id="moon" cx="40%" cy="36%" r="70%">
-      <stop offset="0" stop-color="#fff6d6"/>
-      <stop offset="0.55" stop-color="#ffd27a"/>
-      <stop offset="1" stop-color="#f5a524"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f2a63"/>
+      <stop offset="0.45" stop-color="#5b3a96"/>
+      <stop offset="0.78" stop-color="#c2558f"/>
+      <stop offset="1" stop-color="#ff9a62"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="42%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#fffbea"/>
+      <stop offset="0.6" stop-color="#ffe7a8"/>
+      <stop offset="1" stop-color="#ffc95c"/>
     </radialGradient>
     <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0.5" stop-color="#ffc75f" stop-opacity="0.38"/>
-      <stop offset="1" stop-color="#ffc75f" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#ffe2a0" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffe2a0" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#121729"/>
-      <stop offset="1" stop-color="#07090f"/>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d8fd6"/>
+      <stop offset="1" stop-color="#4e5aa6"/>
+    </linearGradient>
+    <linearGradient id="neck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5664b4"/>
+      <stop offset="1" stop-color="#3a4390"/>
+    </linearGradient>
+    <linearGradient id="town" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2e1d55"/>
+      <stop offset="1" stop-color="#1c1238"/>
     </linearGradient>
   </defs>
 
   <rect width="1024" height="1024" fill="url(#sky)"/>
-  <g fill="#ffffff" opacity="0.7">
-    <circle cx="150" cy="170" r="5"/><circle cx="250" cy="300" r="3.5"/>
-    <circle cx="860" cy="150" r="5"/><circle cx="905" cy="330" r="3.5"/>
-    <circle cx="120" cy="420" r="3"/><circle cx="780" cy="90" r="3"/>
+  <g fill="#ffffff">
+    <circle cx="132" cy="150" r="7" opacity="0.9"/><circle cx="236" cy="96" r="4" opacity="0.7"/>
+    <circle cx="890" cy="128" r="7" opacity="0.9"/><circle cx="800" cy="70" r="4" opacity="0.7"/>
+    <circle cx="96" cy="330" r="4" opacity="0.6"/><circle cx="934" cy="300" r="4" opacity="0.6"/>
   </g>
 
-  <circle cx="512" cy="440" r="380" fill="url(#glow)"/>
-  <circle cx="512" cy="440" r="268" fill="url(#moon)"/>
-  <g fill="#e89a2a" opacity="0.28">
-    <circle cx="420" cy="360" r="34"/><circle cx="628" cy="330" r="22"/><circle cx="600" cy="560" r="40"/>
+  <!-- moon -->
+  <circle cx="512" cy="430" r="390" fill="url(#glow)"/>
+  <circle cx="512" cy="430" r="300" fill="url(#moon)"/>
+  <g fill="#f3c46a" opacity="0.35">
+    <circle cx="300" cy="380" r="30"/><circle cx="730" cy="330" r="22"/><circle cx="700" cy="560" r="34"/>
   </g>
 
-  <!-- village roofline -->
-  <g fill="#0a0d16">
-    <path d="M0 1024 L0 800 L40 800 L40 772 L145 690 L250 772 L250 820 L232 820 L280 776 L330 820 L330 1024 Z"/>
-    <rect x="196" y="700" width="26" height="60"/>
-    <path d="M694 1024 L694 850 L742 800 L790 850 L790 790 L878 700 L966 790 L966 800 L1024 800 L1024 1024 Z"/>
-    <rect x="910" y="712" width="26" height="62"/>
-  </g>
-  <g fill="#ffb938">
-    <rect x="92" y="828" width="34" height="42" rx="4"/>
-    <rect x="166" y="828" width="34" height="42" rx="4"/>
-    <rect x="266" y="860" width="26" height="32" rx="4"/>
-    <rect x="842" y="820" width="34" height="42" rx="4"/>
-    <rect x="910" y="900" width="34" height="42" rx="4"/>
-    <rect x="728" y="880" width="26" height="32" rx="4"/>
-  </g>
+  <!-- wolf: neck + head -->
+  <path fill="url(#neck)" d="M356 540 C340 640 290 720 170 790 L170 1024 L854 1024 L854 790 C734 720 684 640 668 540 Z"/>
+  <path fill="url(#fur)" d="M338 150 L440 292 L512 282 L584 292 L686 150 L724 360 L780 474 L708 492 L630 596 L512 676 L394 596 L316 492 L244 474 L300 360 Z"/>
+  <!-- facet shading -->
+  <path fill="#ffffff" opacity="0.12" d="M512 282 L440 292 L338 150 L300 360 L512 330 Z"/>
+  <path fill="#1b1442" opacity="0.14" d="M512 282 L584 292 L686 150 L724 360 L512 330 Z"/>
+  <path fill="#ffffff" opacity="0.10" d="M244 474 L300 360 L380 470 L316 492 Z"/>
+  <path fill="#1b1442" opacity="0.12" d="M780 474 L724 360 L644 470 L708 492 Z"/>
+  <!-- inner ears -->
+  <path fill="#ffb59a" d="M350 200 L420 296 L322 340 Z"/>
+  <path fill="#f59a86" d="M674 200 L604 296 L702 340 Z"/>
+  <!-- light mask -->
+  <path fill="#f5f2ff" d="M512 344 L560 452 L640 520 L606 600 L512 676 L418 600 L384 520 L464 452 Z"/>
+  <path fill="#dcd6f5" d="M512 676 L606 600 L640 520 L560 560 L512 600 Z"/>
+  <!-- chest ruff -->
+  <path fill="#ece8fb" d="M406 590 L512 676 L618 590 L668 712 L622 700 L610 772 L564 748 L512 820 L460 748 L414 772 L402 700 L356 712 Z"/>
+  <!-- eyes -->
+  <path fill="#ffc531" d="M384 448 Q420 414 466 444 Q440 478 384 448 Z"/>
+  <path fill="#ffc531" d="M640 448 Q604 414 558 444 Q584 478 640 448 Z"/>
+  <ellipse cx="432" cy="448" rx="9" ry="16" fill="#241a45"/>
+  <ellipse cx="592" cy="448" rx="9" ry="16" fill="#241a45"/>
+  <circle cx="437" cy="440" r="4" fill="#ffffff"/>
+  <circle cx="597" cy="440" r="4" fill="#ffffff"/>
+  <!-- nose + smile -->
+  <path fill="#2a1f4d" d="M476 566 Q512 552 548 566 Q540 596 512 606 Q484 596 476 566 Z"/>
+  <path fill="none" stroke="#2a1f4d" stroke-width="7" stroke-linecap="round" d="M512 606 L512 624 M484 630 Q498 642 512 624 Q526 642 540 630"/>
 
-  <!-- hill + howling wolf -->
-  <path d="M250 1024 C290 790 410 728 512 728 C614 728 734 790 774 1024 Z" fill="url(#hill)"/>
-  <path fill="#0a0d16" d="M412 744 L420 690 L424 640 L414 618 L426 602 L410 580 L424 562 L408 540 L422 522 L408 500 L402 470 L384 436 L322 350 L358 362 L322 296 L384 302 L416 294 L428 244 L452 290 L470 236 L480 296 C504 322 522 360 528 398 L548 424 L538 432 L560 462 C600 508 640 548 652 612 C660 652 670 690 704 708 C736 722 772 716 806 694 C806 726 776 748 728 750 L600 752 Z"/>
+  <!-- town in front -->
+  <path fill="url(#town)" d="M0 1024 L0 820 L36 820 L36 790 L140 700 L244 790 L244 860 L300 806 L356 860 L356 900 L380 900 L380 870 L452 806 L512 860 L572 806 L644 870 L644 900 L668 900 L668 860 L724 806 L780 860 L780 790 L884 700 L988 790 L988 820 L1024 820 L1024 1024 Z"/>
+  <rect x="190" y="716" width="28" height="58" fill="#2e1d55"/>
+  <rect x="806" y="716" width="28" height="58" fill="#2e1d55"/>
+  <g fill="#ffcf5a">
+    <rect x="84" y="838" width="40" height="48" rx="6"/>
+    <rect x="158" y="838" width="40" height="48" rx="6"/>
+    <rect x="286" y="880" width="30" height="38" rx="6"/>
+    <rect x="490" y="900" width="44" height="54" rx="22"/>
+    <rect x="708" y="880" width="30" height="38" rx="6"/>
+    <rect x="826" y="838" width="40" height="48" rx="6"/>
+    <rect x="900" y="838" width="40" height="48" rx="6"/>
+    <rect x="120" y="930" width="40" height="48" rx="6"/>
+    <rect x="864" y="930" width="40" height="48" rx="6"/>
+  </g>
 </svg>

@@ -1,4 +1,4 @@
-# Werewolf Town — marketing website
+# Wolf Town — marketing website
 
 Plain static HTML/CSS/JS. No build step, no dependencies.
 
